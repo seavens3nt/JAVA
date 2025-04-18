@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class P1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        System.out.print("Enter your GPA: ");
+        double gpa = scanner.nextDouble();
+        System.out.print("Are you a student? (true/false): ");
+        boolean isStudent = scanner.nextBoolean();
+
+
+        if (isStudent) {
+            System.out.println("You are currently enrolled in National University");
+            System.out.println("Your name is " + name + " and your age is " + age + " and your GPA is " + gpa);
+        }
+
+        else {
+            System.out.println("You are not a student in National University");
+        }
+
+    scanner.close();
+
+    }
+}
