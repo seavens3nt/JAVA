@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class P5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+
+        float gwa;
+        String gpa;
+
+        System.out.print("Enter your GWA: ");
+        gwa = scanner.nextFloat();
+        scanner.nextLine();
+
+        System.out.print("Do you have a course/subject lower than 2.5? (yes/no): ");
+        gpa = scanner.nextLine();
+
+        if (gwa >= 3.50 && gpa.equals("no")) {
+            System.out.println("Congratulations! You are on the Dean's First Honors List.");
+        }
+        else if (gwa >= 3.25 && gpa.equals("no")) {
+            System.out.println("Congratulations! You are on the Dean's Second Honors List.");
+        }
+        else if (gwa >= 3.25 && gpa.equals("yes")) {
+            System.out.println("Unfortunately, because you have a 2.50 on a course/subject you are not qualified for the Dean's List.");
+        }
+        else {
+            System.out.println("You are not qualified for the Dean's List");
+        }
+        scanner.close();
+    }
+}
