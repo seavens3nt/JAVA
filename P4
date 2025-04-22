@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class P4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+
+        float total;
+        String item;
+        int quantity;
+        float price;
+
+
+        System.out.print("What item would you like to buy?: ");
+        item = scanner.nextLine();
+
+        System.out.print("What is the price for each?: ");
+        price = scanner.nextFloat();
+
+        System.out.print("Enter the quantity of the item: ");
+
+        quantity = scanner.nextInt();
+
+        total = price*quantity;
+        System.out.println("You have bought " + quantity + " " + item + "/s");
+        System.out.println("Your total is: $" + total);
+
+        scanner.close();
+    }
+}
