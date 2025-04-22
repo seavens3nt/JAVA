@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class P3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+
+        int x = 7;
+        int y = 11;
+        int z;
+
+        System.out.print("Enter an int to add 7 and subtract 11: ");
+        int number = scanner.nextInt();
+        z = number + x - y;
+        System.out.println("You have entered the int: " + number);
+        System.out.println("The sum of 7 and the int, minus 11 is: " + z);
+
+        scanner.close();
+    }
+}
